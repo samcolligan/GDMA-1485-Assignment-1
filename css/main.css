@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
+.bg-black {
+	background-color: black;
+	color: white;
+	margin: 30px 0;
+}
+
+.bg-pink {
+	background-color: hotpink;
+	color: white;
+} 
+
+.col-1-3:first-child {
+	float: left;
+	width: 350px;
+}
+
+.col-1-3:last-child {
+	float: right;
+	width: 350px;
+}
+
+.right {
+	float: right;
+	width: 570px;
+}
+
+#left {
+	width: 570px;
+}
+#center {
+	width: 570px;
+	margin: 0px auto;
+}
