@@ -1,13 +1,70 @@
 @charset "UTF-8";
 /* CSS Document */
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+--------------------------------------------------------------*/
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+}
+
+.row {
+	overflow: auto;
+}
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS  
+-------------------------------------------------------------- */
+
+
+
+
+
+/* -- FORMS -- */ 
+
+#work p {
+	padding-top: 66px;
 }
 .wrapper {
 	width: 1170px;
@@ -17,36 +74,106 @@
 .row {
 	overflow: auto;
 }
-.bg-black {
-	background-color: black;
+
+.bg-green {
+	background-color: #10443f;
 	color: white;
-	margin: 30px 0;
 }
 
-.bg-pink {
-	background-color: hotpink;
+nav {
+    float: right;
+    margin-top: 30px;
+}
+body > header .wrapper .row div {
+    float: left; 
+}
+
+nav li {
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.txt-white, .txt-white a  {
 	color: white;
-} 
-
-.col-1-3:first-child {
-	float: left;
-	width: 350px;
+	text-decoration: none;
 }
 
-.col-1-3:last-child {
-	float: right;
-	width: 350px;
+#meet p {
+	align-content: center;
+	font-size: 15px;
+	padding-bottom:178px;
+		
 }
 
-.right {
-	float: right;
-	width: 570px;
+#meet {
+	text-align: center;
+	background-color: #104f41;
+	padding-top: 384px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
 }
 
-#left {
-	width: 570px;
+#columns {
+    column-count: 3;
+	list-style-type: none;
+    margin-top: 40px;
 }
-#center {
-	width: 570px;
-	margin: 0px auto;
+
+hr {
+	width: 242px;
+	background-color: gray;
+}
+#features h2, #work h2{
+    color: #2dbda1;
+	text-align: center;
+	padding-bottom: 45px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.txt-center {
+	text-align: left;
+	background-color:#f4f7f9; 
+	padding-top: 75px;
+	padding-bottom: 146px;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+#features {
+	padding-top: 80px;
+}
+
+.txt-works {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#about {
+	background-color: #1ea78d;
+	padding-top: 120px;
+	padding-bottom: 127px;
+	color: white;
+}
+
+span {
+	color:#0fdc95;
+}
+
+#about h2, h1 {
+	font-family: 'Pacifico', cursive;
+}
+#open{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300; 
+}
+
+#about p {
+	text-align: left;
+	width: 254px;
 }
