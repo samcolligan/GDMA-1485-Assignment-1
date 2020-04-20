@@ -42,30 +42,12 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family:'Open Sans', sans-serif;
-	font-weight:300;
 }
-
-.row {
-	overflow: auto;
-}
-/*--------------------------------------------------------------
-4.0 - ELEMENTS 
--------------------------------------------------------------- */
 
 
 /*--------------------------------------------------------------
-6.0 - COMPONENTS  
+5.0 - OBJECTS 
 -------------------------------------------------------------- */
-
-
-
-
-
-/* -- FORMS -- */ 
-
-#work p {
-	padding-top: 66px;
-}
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
@@ -73,107 +55,164 @@
 
 .row {
 	overflow: auto;
+	margin: 0 auto;
 }
 
-.bg-green {
-	background-color: #10443f;
-	color: white;
+.col-1-3:first-child, .col-1-3:nth-child(2), .col-1-3:last-child {
+	float: right;
 }
 
-nav {
-    float: right;
-    margin-top: 30px;
+.col-1-3 {
+	width: 295px;
 }
+
+.col-1-3:nth-child(2){
+	margin: 0 129px;
+}
+
 body > header .wrapper .row div {
     float: left; 
 }
 
+/* -- Framework -- */ 
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS  
+-------------------------------------------------------------- */
+
+nav {
+    float: right;
+    margin-top: 15px;
+}
+
+
 nav li {
-	text-decoration: none;
 	display: inline-block;
 	margin-right: 20px;
 }
 
-.txt-white, .txt-white a  {
-	color: white;
-	text-decoration: none;
+/* -- Navigation -- */ 
+
+#about h2, h1 {
+	font-family: 'Pacifico', cursive;
 }
 
-#meet p {
-	align-content: center;
-	font-size: 15px;
-	padding-bottom:178px;
-		
+h3 {
+	font-weight: 600;
 }
 
-#meet {
-	text-align: center;
-	background-color: #104f41;
-	padding-top: 384px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:300;
+#work h2 {
+	padding-top: 86px;
 }
 
-#columns {
-    column-count: 3;
-	list-style-type: none;
-    margin-top: 40px;
-}
+/* -- Header -- */ 
 
 hr {
 	width: 242px;
-	background-color: gray;
-}
-#features h2, #work h2{
-    color: #2dbda1;
-	text-align: center;
-	padding-bottom: 45px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
+	background-color: #7A7A7A;
 }
 
-.txt-center {
-	text-align: left;
+/*--------------------------------------------------------------
+7.0 - UTILITIES 
+-------------------------------------------------------------- */
+#bg-green {
+	background-color: #10443f;
+}
+
+#meet {
+	background-color: #104f41;
+	padding-top: 384px;
+}
+
+#features {
 	background-color:#f4f7f9; 
 	padding-top: 75px;
 	padding-bottom: 146px;
 }
 
-h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-}
-
-#features {
-	padding-top: 80px;
-}
-
-.txt-works {
-	text-align: center;
-	padding-top: 80px;
-	padding-bottom: 80px;
+#features h2, #work h2{
+    color: #2dbda1;
+	padding-bottom: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 #about {
 	background-color: #1ea78d;
 	padding-top: 120px;
 	padding-bottom: 127px;
-	color: white;
 }
 
-span {
+#about, #meet p, #bg-green a, #bg-green{
+	color: #FFFFFF;
+		
+}
+span, #bg-green a:hover {
 	color:#0fdc95;
 }
 
-#about h2, h1 {
-	font-family: 'Pacifico', cursive;
+/* -- Color -- */ 
+
+#meet p {
+	align-content: center;	
 }
-#open{
-	font-family: 'Open Sans', sans-serif;
-	font-weight:300; 
+
+#work p {
+	margin-top: 80px;
+}
+
+#work div {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 194px;
 }
 
 #about p {
-	text-align: left;
 	width: 254px;
 }
+
+#work p {
+	margin-bottom: 80px;
+}
+#work p, #features h2, #work h2, #meet {
+	text-align: center;
+}
+
+/* -- Alignment -- */
+
+#meet p:nth-child(2){
+	font-size: 42px;
+}
+
+#meet p:last-child {
+	padding-bottom:178px;
+	font-size: 18px;
+}
+
+#features, #about p {
+	text-align: left;
+}
+
+#meet, #bg-green a, nav li {
+	text-decoration: none;
+}
+
+#meet p:first-child {
+	font-size: 62px;
+}
+/* -- Size -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
